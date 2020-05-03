@@ -1,0 +1,298 @@
+1)# Python program to Replace Blank Space with Hyphen in a String
+str1 = input("Please Enter your Own String : ")
+
+str2 = str1.replace(' ', '_')
+
+print("Original String :  ", str1)
+print("Modified String :  ", str2)
+
+
+string=input("Enter string:")
+string=string.replace(' ','-')
+print("Modified string:")
+print(string)
+
+2)# Python3 implementation of the approach 
+  
+def getString(x): 
+  
+    # string class has a constructor 
+    # that allows us to specify the size of 
+    # string as first parameter and character 
+    # to be filled in given size as the second 
+    # parameter. 
+    return x 
+  
+# Function that returns true if 
+# the given strings contain same 
+# characters in same order 
+def solve(s1, s2): 
+  
+    # Get the first character of both strings 
+    a = getString(s1[0]) 
+    b = getString(s2[0]) 
+  
+    # Now if there are adjacent similar character 
+    # remove that character from s1 
+    for i in range(1, len(s1)): 
+        if s1[i] != s1[i - 1]:  
+            a += getString(s1[i]) 
+          
+    # Now if there are adjacent similar character 
+    # remove that character from s2 
+    for i in range(1, len(s2)): 
+        if s2[i] != s2[i - 1]: 
+            b += getString(s2[i]) 
+          
+    # If both the strings are equal 
+    # then return true 
+    if a == b: 
+        return True
+    return False
+  
+# Driver code 
+s1 = input("Enter String 1:")
+s2 = input("Enter String 2:")
+if solve(s1, s2): 
+    print("Yes") 
+else: 
+    print("No") 
+
+3)string=input("Enter string:")
+count1=0
+count2=0
+for i in string:
+      if(i.isdigit()):
+            count1=count1+1
+      count2=count2+1
+string.count(' ')
+print("The number of digits is:")
+print(count1)
+print("The number of characters is:")
+print(count2)
+print("The number of spaces is:")
+print(string.count(' '))
+
+# Python program to Count Alphabets Digits and Special Characters in a String
+ 
+string = input("Please Enter your Own String : ")
+alphabets = digits = special = 0
+
+for i in range(len(string)):
+    if(string[i].isalpha()):
+        alphabets = alphabets + 1
+    elif(string[i].isdigit()):
+        digits = digits + 1
+    else:
+        special = special + 1
+        
+print("\nTotal Number of Alphabets in this String :  ", alphabets)
+print("Total Number of Digits in this String :  ", digits)
+print("Total Number of Special Characters in this String :  ", special)
+
+#final one 3
+string=input("Enter string:")
+
+count2=0
+for i in string:
+       count2=count2+1
+string.count(' ')
+
+alphabets = digits = special = 0
+
+for i in range(len(string)):
+    if(string[i].isalpha()):
+        alphabets = alphabets + 1
+    elif(string[i].isdigit()):
+        digits = digits + 1
+    else:
+        special = special + 1
+        
+print("/n Total Number of Alphabets in this String :  ", alphabets)
+print("Total Number of Digits in this String :  ", digits)
+print("Total Number of Special Characters in this String :  ", special)
+print("The number of characters is:")
+print(count2)
+print("The number of spaces is:")
+print(string.count(' '))
+
+4)#python program to count even and odd numbers in a list 
+#creating an empty list
+lst = [] 
+#number of elements as input
+n = int(input("Enter number of elements : ")) 
+#iterating till the range 
+for i in range(0, n): 
+    ele = int(input()) 
+    lst.append(ele) #adding the element
+print(lst)
+#now python got the list of numbers
+
+even_count, odd_count = 0, 0
+  
+# iterating each number in list 
+for num in lst: 
+      
+    # checking condition 
+    if num % 2 == 0: 
+        even_count += 1
+  
+    else: 
+        odd_count += 1
+          
+print("Even numbers in the list: ", even_count) 
+print("Odd numbers in the list: ", odd_count) 
+print("A program made by Rishabh Narayan, Thanks for using:)")
+print("©2019")
+
+5) # Python program to remove vowels from a string 
+# Function to remove vowels 
+def rem_vowel(string): 
+    vowels = ('a', 'e', 'i', 'o', 'u')  
+    for x in string.lower(): 
+        if x in vowels: 
+            string = string.replace(x, "") 
+              
+    # Print string without vowels 
+    print(string) 
+  
+# Driver program 
+string=input("Enter your desired string: ")
+rem_vowel(string) 
+print("©2019 by Rishabh Narayan")
+
+3) revised
+#final one 3
+string=input("Enter string:")
+
+count2=0
+for i in string:
+       count2=count2+1
+string.count(' ')
+
+alphabets = digits = special = 0
+
+for i in range(len(string)):
+    if(string[i].isalpha()):
+        alphabets = alphabets + 1
+    elif(string[i].isdigit()):
+        digits = digits + 1
+    else:
+        special = special + 1
+        
+word=1
+for i in string:
+    if(i==' '):
+        word=word+1
+        
+    
+        
+print("/n Total Number of Alphabets in this String :  ", alphabets)
+print("Total Number of Digits in this String :  ", digits)
+print("Total Number of Special Characters in this String :  ", special)
+print("The number of characters is:")
+print(count2)
+print("The number of spaces is:")
+print(string.count(' '))
+print("The number of words in the string is: ",word)
+
+6)string=input("Enter string:")
+count1=0
+for i in string:
+    count1=count1+1
+      
+print(count1)
+
+8)def reverse(lst):
+    return [ele for ele in reversed(lst)]
+#driver code 
+#creating an empty list
+lst = [] 
+#number of elements as input
+n = int(input("Enter number of elements : ")) 
+#iterating till the range 
+for i in range(0, n): 
+    ele = input() 
+    lst.append(ele) #adding the element
+print("The orignal list was:")
+print(lst)
+print("The reversed list is:",reverse(lst))
+
+Program for getting input into an list 
+#number of elements 
+n=int(input("Enter the number of elements:")
+#Below line read inputs from user using map() function
+a=list(map(int,input("\nEnter the number:").strip().split())
+print("\nList is -",a)
+
+9) #creating an empty list
+a = []
+#number of elements as input
+n = int(input("Enter number of elements : "))
+#iterating till the range
+for i in range(0, n):
+    ele = int(input())
+    a.append(ele) #adding the element
+print(a)
+
+#repeating loop len(a)(number of elements) number of times
+for j in range(len(a)):
+    #initially swapped is false
+    swapped = False
+    i = 0
+    while i<len(a)-1:
+        #comparing the adjacent elements
+        if a[i]>a[i+1]:
+            #swapping
+            a[i],a[i+1] = a[i+1],a[i]
+            #Changing the value of swapped
+            swapped = True
+        i = i+1
+    #if swapped is false then the list is sorted
+    #we can stop the loop
+    if swapped == False:
+        break
+print (a)
+
+10) #creating an empty list
+a = []
+#number of elements as input
+n = int(input("Enter number of elements : "))
+#iterating till the range
+for i in range(0, n):
+    ele = int(input())
+    a.append(ele) #adding the element
+print(a)
+
+#iterating over a
+for i in a:
+    j = a.index(i)
+    #i is not the first element
+    while j>0:
+        #not in order
+        if a[j-1] > a[j]:
+            #swap
+            a[j-1],a[j] = a[j],a[j-1]
+        else:
+            #in order
+            break
+        j = j-1
+print (a)
+
+
+
+
+
+
+
+
+# try block to handle the exception 
+try: 
+    my_list = [] 
+      
+    while True: 
+        my_list.append(int(input())) 
+          
+# if input is not-integer, just print the list 
+except: 
+    print(my_list) 

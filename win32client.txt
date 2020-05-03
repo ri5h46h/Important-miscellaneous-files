@@ -1,0 +1,11 @@
+import win32com.client
+speaker = win32com.client.Dispatch("SAPI.SpVoice")
+speaker.Speak("Hello, it works!")
+
+
+def speak(str):
+    from win32com.client import Dispatch
+    speak = Dispatch("SAPI.SpVoice")
+    speak.Speak(str)
+
+speak("Hello")

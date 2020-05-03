@@ -1,0 +1,61 @@
+
+---------------------------------------------- Microsoft Visual Studio Code Installation Guide ----------------------------------
+--------------------------------------------------- Steps to Setup VS Code for Python -------------------------------------------
+
+
+1. Click on Interface Overview on Welcome Screen 
+	> File Explorer Ctrl + Shift + E		}	
+	> Search across files Ctrl + Shift + F          }
+	> Source Code Management Ctrl + Shift + G       }  - at Top Left Corner 
+	> Launch and Debug Ctrl + Shift + D		}
+	> Manage Extensions Ctrl + Shift + X		}
+
+        > Find and run all commands Ctrl + Shift + P		} Top Middle 
+
+        > Show Notifications  ( Bell icon at Bottom right corner )
+
+        > Toggle integrated terminal  Ctrl + `
+
+	> View errors and warnings Ctrl + Shift + M		} Bottom left corner 
+
+2. Click on ' Open Folder ' and Create a new folder at your desired location in your PC. Name it "VS Code Projects".
+
+3.Create a New Python file in the folder you created with (.py) extension. You can name it 'main.py'
+
+4. By clicking on ' magnifying glass icon ' at Top left, you can search across your files. 
+
+5. Go to extensions and Search for Python and Install it.
+
+6. Go to settings by Clicking on Gear icon at Bottom left corner > and go to user settings and check mouse wheel zoom.
+
+7. Split screen Editing option at the top right corner 
+
+8. Right click in the Editor and select '' Run Python File in Terminal ''
+
+9. If gives error that '" No python Interpreter is selected .... Click on it and select path where python.exe is installed on your computer.
+
+10. To run code easily with help of a button > go to extensions > install 'code runner' extension by Jun Han  
+ 
+11. To Clear recently opened press Ctrl + Shift + P and type 'Clear recently opened' and enter, it will clear the recently opened files and folders.
+
+12. Go to settings of Code Runner > go to settings > search '' code runner '' > 
+	> Check --> Clear output before each run
+	> Check --> Run in Terminal
+	> Check --> Save file before run
+
+command main ham shell  type karke terminal change kar sakte hai 
+powershell our command prompt ke bich main
+
+13. Multi cursor in VS Code : Press Alt and click on that places where you want to obtain multiple cursors. Also use Alt + Shift 
+
+14. Code Folding within loops , functions etc. 
+
+15. Should print keyboard shortcuts cheatsheet 
+
+16. to automatically add brackets go to settings search "python brackets" and check option.
+
+17. You can also create your own snippets 
+
+
+
+

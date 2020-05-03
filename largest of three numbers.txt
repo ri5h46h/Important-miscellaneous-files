@@ -1,0 +1,31 @@
+#This is a python program to calculate the largest of three numbers provided by the user
+num1=int(input("Enter the number1:"))
+num2=int(input("Enter the number2:"))
+num3=int(input("Enter the number3:"))
+if (num1>num2):
+    if(num1>num3):
+        print("num1 is the largest number")
+if(num2>num1):
+    if(num2>num3):
+        print("num2 is the largest number")
+if(num3>num1):
+    if(num3>num2):
+        print("num3 is the largest number")
+#Thank you:)
+
+
+
+# Python program to find the largest number among the three input numbers
+# take three numbers from user
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+num3 = float(input("Enter third number: "))
+ 
+if (num1 > num2) and (num1 > num3):
+   largest = num1
+elif (num2 > num1) and (num2 > num3):
+   largest = num2
+else:
+   largest = num3
+ 
+print("The largest number is",largest)

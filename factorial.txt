@@ -1,0 +1,17 @@
+#Python program to find the factorial of a given no using while loop
+num=int(input("Enter the number whose factorial you want:"))
+#takes input from user
+
+factorial=1;
+#declare and initialize factorial variable to one
+#check if the number is negative, positive or zero
+if num<0:
+    print("Factorial does not defined for negative integer");
+elif(num==0):
+    print("The factorial of zero is 1")
+else:
+   while(num>0):
+      factorial=factorial*num
+      num=num-1
+      print("Factorial of the given no is:")
+      print(factorial)

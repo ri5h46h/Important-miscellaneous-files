@@ -1,0 +1,66 @@
+1. Install Package : platformio-ide-terminal
+2. Install Package : script
+3. Predawn syntax/UI theme - optional
+4. setting > Editor > check Scroll past end 
+5. Change TAB length to 4
+6. disable/enable autocomplete plus/snippets - optional
+7.Install Package : autocomplete-python
+8.Install Package : atom-file-icons / File Icons 
+9.Install Package : minimap and minimap-highlight-selected 
+10.Install Package : python-autopep8 
+	go to cmd and execute the command 'pip install autopep8' 
+	Then go to plugin settings - 
+	
+11. Install Package : linter-flake8
+	OR in cmd execute command 'pip install flake8'   and 'pip install pylint' 
+
+to run with different python versions 
+
+go to script > run options > enter command 
+
+----------------------------NOT A PART OF THE ABOVE DOCUMENT----------------------------
+
+important modules 
+
+autopep8
+flake8
+pylint
+matplotlib
+pyinstaller
+pyttsx3
+pyttsx
+pypiwin32
+speechRecognition  \ speechRecognition as sr
+pyaudio
+wikipedia
+os
+datetime
+random
+smtplib
+pywin32
+plyer
+bs4
+playsound
+pandas 
+django
+requests
+
+
+modules used in AI_assistant.py
+
+import os 
+import pyttsx #pip install pyttsx , you can also install pyttsx3
+import datetime
+import speech_recognition as sr  #pip install speechRecognition
+import wikipedia #pip install wikipedia
+import webbrowser
+import random
+import smtplib
+import pyaudio #pip install pyaudio
+
+
+
+http://bintangjayaexpress.com/css/cursor.png 
+
+http://51.77.53.164/Getintopc.com/Bandicam_4.4.3.1557_Multilingual.zip?md5=K4gZ443kV4sqhvfsy1TJJA&expires=1587887970
+

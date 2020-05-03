@@ -1,0 +1,332 @@
+# Created by Rishabh
+# Coded Heart Emoji
+for row in range(0,6):
+    for col in range(7):
+        if(row==0 and col%3 !=0) or (row==1 and col%3==0) or (row-col==2) or (row+col==8):
+            print("*",end=" ")
+        else:
+            print(' ',end=' ')
+    print()
+print("Made By: Rishabh Narayan")
+#upvote will be appreciated :)
+
+Computer science practicals 
+#practical 3 
+# WAP to accept a number from the user and display whether it is odd or even
+num=int(input("Enter the number:"))
+if num%2==0:
+    print(num,"is a even number.")
+else:
+    print(num,"is a odd number.")
+
+#practical 4 
+# WAP to accept % of a student and display its grade accoedingly
+# Python Program to find Student Grade
+
+eng = float(input(" Please enter English Marks: "))
+math = float(input(" Please enter Math score: "))
+compsci = float(input(" Please enter Computer Science Marks: "))
+phy = float(input(" Please enter Physics Marks: "))
+chem = float(input(" Please enter Chemistry Marks: "))
+
+
+total = eng + math + compsci + phy + chem
+percentage = (total / 240) * 100
+
+print("Total Marks = %.2f" % total)
+print("Marks Percentage = %.2f" % percentage)
+
+if (percentage >= 90):
+    print("A Grade")
+elif (percentage >= 80):
+    print("B Grade")
+elif (percentage >= 70):
+    print("C Grade")
+elif (percentage >= 60):
+    print("D Grade")
+elif (percentage >= 40):
+    print("E Grade")
+else:
+    print("Fail")
+
+#practical 5 
+
+# WAP to print fibonacci series up to a certain limit
+def Fibonacci(n):
+    if n < 0:
+        print("Incorrect input")
+        # First Fibonacci number is 0
+    elif n == 1:
+        return 0
+    # Second Fibonacci number is 1
+    elif n == 2:
+        return 1
+    else:
+        return Fibonacci(n - 1) + Fibonacci(n - 2)
+
+    # Driver Program
+
+n=int(input("Enter limit (a +ve integer): "))
+print(Fibonacci(n))
+
+
+by me:
+# WAP to print fibonacci series upto a certain limit taken by user
+def fib(n):
+    a=0
+    b=1
+
+    if n==1:
+        print(a)
+    else:
+        print(a)
+        print(b)
+        for i in range(2,n):
+
+            c=a+b
+            a=b
+            b=c
+
+            print(c)
+
+
+
+
+n=int(input("Hey User ! Enter a number: "))
+fib(n)
+
+
+#Practical 6 
+# WAP to display prime numbers up to a certain limit
+
+start = 0
+end=int(input("Enter a number to print prime no(s) upto that limit: "))
+end = end
+
+for num in range(start, end + 1):
+
+    # If num is divisible by any number
+    # between 2 and val, it is not prime
+    #all prime numbers are > 1
+    if num > 1:
+        for n in range(2, num):
+            if (num % n) == 0:
+                break
+        else:
+            print(num)
+
+# WAP 
+num=int(input("Enter a number to check: "))
+for i in range(2,num):
+    if num % i == 0:
+        print(num,"is not  prime ")
+        break
+else:
+    print(num,"is prime")
+
+#practical 7 
+for n numbers 
+
+# WAP to accept a no., find and display whether it is a armstrong umber or not.
+for num in range(456):
+    # Changed num variable to string,
+    # and calculated the length (number of digits)
+    order = len(str(num))
+    # initialize sum
+    sum = 0
+    # find the sum of the cube of each digit
+    temp = num
+    while temp > 0:
+       digit = temp % 10
+       sum += digit ** order
+       temp //= 10
+    # display the result
+    if num == sum:
+       print(num,"is an Armstrong number")
+    else:
+       print(num,"is not an Armstrong number")
+
+
+# WAP to print armstrong numbers between a limit given by user
+a = int(input("Enter a range to print armstrong numbers:"))
+for i in range(0,a):
+    num = i
+    result = 0
+    n=len(str(i))
+    while (i != 0):
+        digit = i % 10
+        result=result+digit**n
+        i //= 10
+    if num == result:
+        print(num)
+
+# practical 8
+# WAP to accept a no. and find out whether the number is perfect or not
+num = int(input("Enter a no. to check: "))
+result = 0
+for i in range(1,num):
+    if (num % i) == 0:
+        result += i
+if result == num:
+    print(num,"is a perfect number")
+else:
+    print(num,"is not a perfect number")
+
+# practical 10
+# practical 10
+''' WAP to print the following pattern
+1
+1  2
+1  2  3 '''
+
+n = int(input("Enter the number of rows: "))
+for i in range(1,n+1):  #for rows
+    for j in range(1,i+1):  #for coloumns
+        print(j, end=" ")  # for same numbers use i instead of j 
+    print()
+
+# practical 11
+# WAP to check that whether the entered string is palindrome or not
+string=input(("Enter a string: "))
+if(string==string[::-1]):
+      print("The string is a palindrome")
+else:
+      print("The string is NOT a palindrome")
+
+
+# practical 12
+# WAP to count digits, upercase, lowercase, spaces and other characters in the given string
+str=input("Enter a string :")
+
+uppercase = lowercase = digits = spaces = otherchar = 0
+
+for i in str:
+    if i >='A' and i <= "Z":
+        uppercase += 1
+    elif i >= "a" and i <= "z":
+        lowercase += 1
+    elif (str[i].isdigit()):
+        digits += 1
+    elif str.count(' '):
+        spaces += 1
+    else:
+        otherchar += 1
+print("The number of uppercase alphabets is:",uppercase)
+print("The number of lowercase alphabets is:",lowercase)
+print("The number of digits is:",digits)
+print("The number of spaces is:",spaces)
+print("The number of other characters is:",otherchar)
+
+
+#error free
+# practical 12
+# WAP to count digits, upercase, lowercase, spaces and other characters in the given string
+str=input("Enter a string :")
+
+uppercase = lowercase = digits = spaces = otherchar = 0
+
+for i in str:
+    if i >='A' and i <= "Z":
+        uppercase += 1
+    elif i >= "a" and i <= "z":
+        lowercase += 1
+for i in range(len(str)):
+    if (str[i].isdigit()):
+        digits += 1
+    elif str.count(' '):
+        spaces += 1
+    else:
+        otherchar += 1
+print("The number of uppercase alphabets is:",uppercase)
+print("The number of lowercase alphabets is:",lowercase)
+print("The number of digits is:",digits)
+print("The number of spaces is:",spaces)
+print("The number of other characters is:",otherchar)
+
+
+# Practical 13
+# WAP to capitalize first letter of each word in a string
+
+str=input("Enter a String:")
+print(str.title())
+
+
+
+# Practical 14
+# WAP to remove odd numbers from a list 
+
+try:
+    lst=[]
+    while True:
+        lst.append(int(input()))
+except:
+    print(lst)
+
+
+#iterating over str
+for i in lst[:]:
+    if (i%2!= 0):
+        lst.remove(i)
+print(lst)
+
+
+# Practical 15
+# WAP to display cumulative elements of a given list
+
+# cumulative sum
+def cumulative(l):
+   new = []
+   cumsum = 0
+   for element in l:
+      cumsum += element
+      new.append(cumsum)
+   return new
+
+# Driver Program
+lst=[4,5,6,7,8,9,10]
+print("Cumulative Sum of given list:",cumulative(lst))
+
+
+# Practical 16
+# WAP to display second largest element of a list
+
+try:
+    list = []
+
+    while True:
+        list.append(int(input()))
+except:
+    print(list)
+list.sort()
+print("The second largest element in the list is:",list[-2])
+
+
+# Practical 17
+# WAP to display frequencies of elements in list
+
+import collections
+try:
+    list=[]
+    while True:
+        list.append(int(input()))
+except:
+    print("Orignal list:",list)
+fi = collections.Counter(list)
+print("Frequencies of elements in list:",fi)
+
+https://www.speedtest.net/result/9017704756
+
+
+# Practical 18
+# WAP to accept values from user and create a Tuple
+values = input("Input some comma seprated numbers : ")
+list = values.split(",")
+tuple = tuple(list)
+print('List : ',list)
+print('Tuple : ',tuple)
+
+
+
+
+
+

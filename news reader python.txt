@@ -1,0 +1,44 @@
+def speak(str):
+    from win32com.client import Dispatch
+    speak=Dispatch("SAPI.spVoice")
+    speak.Speak(str)
+
+if _name_ == '__main__':
+    import requests
+    import json
+    url = ('https://newsapi.org/v2/top-headlines?'
+           'sources=bbc-sport&'
+           'apiKey=49e391e7066c4158937096fb5e55fb5d')
+
+    response = requests.get(url)
+    text = response.text
+    my_json = json.loads(text)
+    for i in range(0, 11):
+        speak(my_json['articles'][i]['title'])
+
+
+
+
+
+import pyttsx
+engine = pyttsx.init('sapi5')
+newVoiceRate=145
+engine.setProperty('rate', newVoiceRate)
+voices = engine.getProperty('voices')
+# print(voices[1].id)
+engine.setProperty('voice', voices[1].id)
+
+def speak(audio):
+    engine.say(audio)
+    engine.runAndWait()
+
+if __name__ == '__main__':
+    import requests
+    import json
+    url = ('http://newsapi.org/v2/top-headlines?country=in&apiKey=a5b172a2897744d9af10f51fa659197e')
+
+    response = requests.get(url)
+    text = response.text
+    my_json = json.loads(text)
+    for i in range(0, 11):
+        speak(my_json['articles'][i]['title'])
